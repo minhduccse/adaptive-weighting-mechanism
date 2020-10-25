@@ -27,7 +27,7 @@ Run the simulation on ***Ubuntu 18.04***
 
 **Run without obstacles**
 
-    python3 flock.py
+    $ python3 flock.py
 
 **Usage**
 
