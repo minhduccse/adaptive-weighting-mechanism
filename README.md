@@ -1,10 +1,10 @@
 # Adaptive Weighting Mechanism for Reynolds Rules-based Flocking Control Scheme
   
-## Prerequisite
+## 1. Prerequisites
 
 Run the simulation on ***Ubuntu 18.04***
 
-**Install Python3 pip**
+**Install Python3 via pip**
 
     $ sudo apt-get update
     $ sudo apt-get install python3-pip
@@ -13,7 +13,7 @@ Run the simulation on ***Ubuntu 18.04***
 
     $ pip3 install -U pygame --user
 
-## Instruction
+## 2. Instruction
 
 **Run the conventional method with obstacles**
 
@@ -28,6 +28,9 @@ Run the simulation on ***Ubuntu 18.04***
 **Run without obstacles**
 
     $ python3 flock.py
+
+## 3. Draw graphs
+(to be updated...)
 
 **Usage**
 
