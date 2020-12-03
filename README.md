@@ -29,7 +29,7 @@ Run the simulation on ***Ubuntu 18.04***
 
     $ python3 flock.py
 
-## 3. Draw graphs
+## 3. Plot graphs
 (to be updated...)
 
 **Usage**
