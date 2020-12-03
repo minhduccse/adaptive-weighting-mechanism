@@ -9,7 +9,7 @@ if len(sys.argv)>1:
     x1 = [i for i in range(len(log1))]
     fig = plt.figure()
 
-# ###########################################################################################
+# #########################################################################################
     ax = fig.add_subplot(1, 1, 1)
     ax.set_yticks(np.arange(-1, 10, 1))
     ax.set_xticks(np.arange(0, 200, 25), minor=True)
@@ -19,7 +19,7 @@ if len(sys.argv)>1:
     plt.ylabel( 'Number of crashed drones',size = 26)
     plt.xlabel( 'Iteration' ,size = 26)
     plt.plot(x, log[:,1],'b^', label = 'Proposed Method', markersize=12)
-    plt.axis([0, 200, -2, 5], size = 26)
+    plt.axis([0, 200, -2, 5] )#size = 26)
     plt.legend(prop={"size":20})
 
     plt.show()

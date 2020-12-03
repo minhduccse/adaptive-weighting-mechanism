@@ -5,7 +5,7 @@ np.random.seed(2015)
 
 y = np.random.randint(5, 50, (10,3))
 
-log= np.loadtxt( 'proposed_method_breakdown.csv',delimiter = ',')
+log= np.loadtxt( 'proposed_method_breakdown_paper.csv',delimiter = ',')
 
 df = pd.DataFrame({'avoidance':log[:,0],'separation':log[:,1],'alignment':log[:,2],'cohesion':log[:,3],'migration':log[:,4]})
 
