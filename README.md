@@ -30,7 +30,30 @@ Run the simulation on ***Ubuntu 18.04***
     $ python3 flock.py
 
 ## 3. Plot graphs
-(to be updated...)
+
+**Plot flock compactness figures**
+
+ Scenarios with obstacles:
+
+    $ python3 plot.py
+
+ Scenarios without obstacles:
+
+     $ python3 plot.py 1
+
+
+**Plot rule impact figures**
+
+Conventional method:
+
+    $ cd conventional_method
+    $ python3 plot_rule_impact.py
+
+Proposed method:
+
+    $ cd proposed_method
+    $ python3 plot_rule_impact.py
+
 
 **Usage**
 
