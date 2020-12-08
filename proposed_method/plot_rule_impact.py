@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+from itertools import cycle, islice
+
 import matplotlib.pyplot as plt
 np.random.seed(2015)
 
@@ -10,7 +12,10 @@ log= np.loadtxt('proposed_rule_impact.csv',delimiter = ',')
 df = pd.DataFrame({'Avoidance':log[:,0],'Separation':log[:,1],'Alignment':log[:,2],'Cohesion':log[:,3],'Migration':log[:,4]})
 
 df = df.divide(df.sum(axis=1), axis=0)
-ax = df.plot.area(linewidth=0,stacked=True, y = ['Migration', 'Cohesion', 'Alignment', 'Separation', 'Avoidance'])
+
+col = list(islice(cycle(['green', 'orange', 'black', 'yellow', 'purple']), None, len(df)))
+
+ax = df.plot.area(linewidth=0,stacked=True, y=['Migration', 'Cohesion', 'Alignment', 'Separation', 'Avoidance'], color=col)
 
 ax.set_ylabel('Rule impact\'s ratio', size = 26)
 ax.set_xlabel('Steps', size = 26)
